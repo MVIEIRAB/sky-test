@@ -1,4 +1,4 @@
-Proposta
+    Proposta
 
 Crie um aplicativo backend que irá expor uma API RESTful de 
 criação de sing up/sign in.
@@ -12,10 +12,11 @@ Todas as respostas de erro devem retornar o objeto:
     "mensagem": "mensagem de erro"
 }
 
-Prazo
+    PRAZO
+
 • 3 dias corridos.
 
-Sign up
+    SIGN UP =>
 
 • Este endpoint deverá receber um usuário com os seguintes campos: nome,
 email, senha e uma lista de objetos telefone. Seguem os modelos:
@@ -34,7 +35,7 @@ email, senha e uma lista de objetos telefone. Seguem os modelos:
 
 • Usar status codes de acordo
 
-• Em caso de sucesso irá retornar um usuário mais os campos:
+• Em caso de sucesso irá retornar um usuário mais os campos =>
 
 • id: id do usuário (pode ser o próprio gerado pelo banco, porém seria interessante
 se fosse um GUID)
@@ -52,7 +53,8 @@ criação)
 existente".
 
 • O token deverá ser persistido junto com o usuário
-Sign in
+
+    SIGN IN =>
 
 • Este endpoint irá receber um objeto com e-mail e senha.
 
@@ -65,6 +67,8 @@ igual ao endpoint de sign_up.
 • Caso o e-mail exista mas a senha não bata, retornar o status apropriado 401
 mais a mensagem "Usuário e/ou senha inválidos"
 Buscar usuário
+
+    BUSCAR USUARIOS
 
 • Chamadas para este endpoint devem conter um header na requisição de
 Authentication com o valor "Bearer {token}" onde {token} é o valor do token
@@ -86,7 +90,8 @@ minutos atrás.
 apropriado com mensagem "Sessão inválida".
 
 • Caso tudo esteja ok, retornar o usuário.
-Requisitos
+
+    REQUISITOS
 
 • Persistência de dados
 
@@ -97,7 +102,8 @@ Requisitos
 • API: Express, Hapi ou similares.
 
 • Utilizar banco nosql
-Requisitos desejáveis
+
+    REQUESITOS DESEJAVEIS
 
 • JWT como token
 
@@ -106,7 +112,8 @@ Requisitos desejáveis
 • Criptografia não reversível (hash) na senha e no token
 
 • Mongo
-Submissão
+
+    SUBMISSAO
 
 • O desafio deve ser entregue pelo GitHub. 
 
