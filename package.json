@@ -2,9 +2,9 @@
   "name": "sky-test",
   "version": "1.0.0",
   "description": "backend test by sky",
-  "main": "index.js",
+  "main": "./src/server.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon ./src/server.js"
   },
   "repository": {
     "type": "git",
@@ -13,8 +13,13 @@
   "author": "Matheus V.",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "mongoose": "^5.10.2"
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.2",
+    "nodemailer": "^6.4.11"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
